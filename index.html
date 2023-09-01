@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Etch-a-Sketch</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="sketchpad.js" defer>
+	</script>
+</head>
+<body onload="updateScreen();">
+	<header>
+		<h1>Etch-a-Sketch</h1>
+	</header>
+
+	<div class="content">
+		<div class="sketchpad">
+			<div class="screen">
+				<!-- Screen Pixels will populate here -->
+			</div>
+			<div class="options">
+				<button id="clear-button" onclick="clearScreen();">Clear</button>
+				<div class="slider-container">
+				  <input type="range" min="1" max="64" value="25" class="slider" id="sketchpad-size" oninput="updateScreen();">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>LinkedIn</p>
+		<p>GitHub</p>
+		<p>The Odin Project</p>
+	</footer>
+</body>
+</html>
