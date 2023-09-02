@@ -2,6 +2,8 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 
 header {
@@ -11,10 +13,20 @@ header {
 }
 
 .content {
+	background-image: url("images/etch-a-sketch.jpeg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 	display: flex;
 	flex: 1;
 	align-items: center;
 	justify-content: center;
+}
+
+.sketchpad {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .screen{
@@ -22,8 +34,8 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	height: 70vh;
-	width: 70vh;
+	height: 54vh;
+	width: 54vh;
 }
 
 .pixel {
@@ -32,9 +44,20 @@ header {
 	border: 0.1px solid black;
 }
 
+.options {
+	display: flex;
+	justify-content: space-around;
+}
+
 footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    background-image: none;
+  }
 }
