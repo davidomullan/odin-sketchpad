@@ -20,6 +20,10 @@
 			</div>
 			<div class="options">
 				<button id="clear-button" onclick="clearScreen();">Clear</button>
+				<div class="color-options">
+					<label for="favcolor">Select your favorite color:</label>
+					<input type="color" class="slider" id="color-picker" value="black">
+				</div>
 				<div class="slider-container">
 				  <input type="range" min="1" max="64" value="25" class="slider" id="sketchpad-size" oninput="updateScreen();">
 				</div>

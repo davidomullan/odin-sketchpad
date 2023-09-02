@@ -26,7 +26,7 @@ function updateScreen(){
 		newPixel.style.height = `${100/screenSize}%`;
 		newPixel.style.width = `${100/screenSize}%`;
 		newPixel.addEventListener("mouseover", (event) => {
-			newPixel.style.backgroundColor = "black";
+			newPixel.style.backgroundColor = document.querySelector('#color-picker').value;
 		});
 		screen.appendChild(newPixel);
 	}

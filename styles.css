@@ -26,7 +26,7 @@ header {
 .sketchpad {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 6px;
 }
 
 .screen{
@@ -47,6 +47,14 @@ header {
 .options {
 	display: flex;
 	justify-content: space-around;
+	margin: 0;
+}
+
+.color-options {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 1px;
 }
 
 footer {
